@@ -8,12 +8,32 @@ import os
 import sys
 
 
-class TUI_Cheat:
+class pykki:
+    '''
+    A pythonic shout of self knowledge
+    '''
+    def __init__(self):
+        self.keybinding = ''
+        self.action = ''
+        self.tags = []
+
+
+class pykkido:
+    '''
+    The Pythonic Way of Keys.
+    '''
     def __init__(self):
         self.name = name
         self.ref_path = Path.home() / '.config' / 'pykki' / self.name
-        self.tags = []
-        self.src_url = src_url
+        self.metadata = {}
+        self.entry = pykki
+        self.kido = []
+        
+
+    def delete_all(self, ref_path):
+        self.ref_path.unlink()
+
+    def delete_ki(self, entry):
+        self.remove()
 
 
-def 
